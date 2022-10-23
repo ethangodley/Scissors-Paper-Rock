@@ -8,8 +8,8 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "node --max_old_space_size=460 node_modules/.bin/react-scripts start",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "heroku-postbuild": "node --max_old_space_size=2560",
+    "start": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
