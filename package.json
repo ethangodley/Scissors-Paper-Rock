@@ -8,7 +8,7 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "node --max_old_space_size=2560 && concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "start": "node --max_old_space_size=4096 && concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
