@@ -41,7 +41,7 @@ HTML
 To correctly install this project either download the code as a zip or git fork the repostiory. 
 
 ## Usage
-To use this project either click [here](https://ethan-tech-blog.herokuapp.com) and start playing. Or once a copy of the repository has been downloaded type `npm i` in the root command line of the repository, then run `npm run develop`. The application will then be ready in the browser on localhost. The application should look like the following: 
+To use this project either click [here](https://ethan-scissors-paper-rock.herokuapp.com) and start playing. Or once a copy of the repository has been downloaded type `npm i` in the root command line of the repository, then run `npm run develop`. The application will then be ready in the browser on localhost. The application should look like the following: 
 ![game](./assets/game.PNG)
 ![scores](./assets/scores.PNG)
 ![login](./assets/login.PNG)
