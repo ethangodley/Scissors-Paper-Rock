@@ -29,7 +29,7 @@ const ScoreList = ({id, scores}) => {
         variables: { _id: id, score: score },
       });
       console.log(score);
-      Location.reload();
+      document.location.reload();
   };
   if (!scores.length) {
     return (
