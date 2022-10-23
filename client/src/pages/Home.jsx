@@ -2,6 +2,7 @@ import "../App.css";
 import { FaHandRock, FaHandPaper, FaHandScissors, FaHandLizard, FaHandSpock } from "react-icons/fa";
 import { useState } from "react";
 import {reactLocalStorage} from 'reactjs-localstorage';
+import { Link } from 'react-router-dom';
 
 const actions = {
   rock: ["scissors", "lizard"],
