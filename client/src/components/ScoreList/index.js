@@ -32,7 +32,16 @@ const ScoreList = ({id, scores}) => {
       window.location.reload();
   };
   if (!scores.length) {
-    return <h3>No Scores Yet</h3>;
+    return (
+    <div>
+      <h3>No Scores Yet</h3>
+      <button className="btn"
+      onClick={() => handleAddScore(reactLocalStorage.get('Streak'))}
+      >
+      Add Score of {reactLocalStorage.get('Streak')}
+      </button>
+      </div>
+    )
   }
 
   return (
