@@ -20,7 +20,7 @@ const Header = () => {
         <div className="items">
           {Auth.loggedIn() ? (
             <nav>
-              <Link to="/me" className="navItem right">
+              <Link to="/highScores" className="navItem right">
                 High Scores
               </Link>
               <Link className="navItem right" onClick={logout}>

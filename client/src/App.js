@@ -58,7 +58,7 @@ function App() {
                 element={<Signup />} 
               />
               <Route 
-                path="/me" 
+                path="/highScores" 
                 element={<HighScores />} 
               />
             </Routes>
