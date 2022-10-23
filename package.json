@@ -5,7 +5,6 @@
   "main": "server/server.js",
   "dependencies": {
     "concurrently": "^7.4.0",
-    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "node --max_old_space_size=4096 && concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
