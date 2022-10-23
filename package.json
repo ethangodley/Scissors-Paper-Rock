@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
+  "dependencies": {
+    "concurrently": "^7.4.0",
+    "react-scripts": "^5.0.1"
+  },
   "scripts": {
-    "heroku-prebuild": "npm i",
-    "start": "node --max_old_space_size=2560 concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "start": "node --optimize_for_size --max_old_space_size=460 dist/main.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
@@ -13,10 +16,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-  },
-  "dependencies": {
-    "concurrently": "^7.4.0"
-  }
+  "license": "ISC"
 }
