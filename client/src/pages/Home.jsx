@@ -82,7 +82,7 @@ function AddHighScore({highScore = 0}) {
   return (
     <div className="center">
       <h3 className="center">Would you like to add streak of {highScore} to high score?</h3>
-      <a href="/highScores" className="btn">Save</a>
+      <Link to="/highScores" className="btn">Save</Link>
     </div>
   );
 }
